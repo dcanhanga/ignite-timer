@@ -32,6 +32,7 @@ export const fontFamily = {
 };
 
 export const colors = {
+  white: '#ffffff',
   'red-dark': '#7A1921',
   red: '#AB222E',
   warning: '#FBA94C',

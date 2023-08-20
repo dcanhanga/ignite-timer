@@ -14,5 +14,6 @@ line-height: ${props => props.theme.font[16].lineHeight};
 body {
   background-color: ${props => props.theme.colors.background};
   font-family: ${props => props.theme.fontFamily.roboto};
+  color: ${props => props.theme.colors.text}
 }
 `;
