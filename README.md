@@ -7,6 +7,3 @@
 <br/>
 
 # Ignite Timer
-
-
-

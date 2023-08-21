@@ -32,8 +32,22 @@ export const fontFamily = {
 };
 
 export const colors = {
-  white: '#ffffff',
+  'gray-1': '#121214',
+  'gray-2': '#202024',
+  'gray-3': '#323238',
+  'gray-4': '#7C7C8A',
+  'gray-5': '#8D8D99',
+  'gray-6': '#C4C4CC',
+  'gray-7': '#E1E1E6',
+
+  'green-extra': '#EAF6F2',
+  'green-light': '#00B37E',
+  green: '#00875F',
+  'green-dark': '#015F43',
+
   'red-dark': '#7A1921',
   red: '#AB222E',
+
   warning: '#FBA94C',
+  white: '#ffffff',
 };

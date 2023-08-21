@@ -9,11 +9,19 @@ box-sizing: border-box;
 padding: 0;
 font-size: ${props => props.theme.font[16].size};
 line-height: ${props => props.theme.font[16].lineHeight};
-
+text-decoration:none;
 }
+
 body {
-  background-color: ${props => props.theme.colors.background};
   font-family: ${props => props.theme.fontFamily.roboto};
-  color: ${props => props.theme.colors.text}
+   background-color: ${props => props.theme.colors['bg-1']};
+   color: ${props => props.theme.colors['text']}; 
+ 
+     
+}
+button {
+  border:0;
+  background-color: transparent;
+  cursor: pointer;
 }
 `;
