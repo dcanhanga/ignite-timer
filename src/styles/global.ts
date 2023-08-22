@@ -10,7 +10,9 @@ padding: 0;
 font-size: ${props => props.theme.font[16].size};
 line-height: ${props => props.theme.font[16].lineHeight};
 text-decoration:none;
-outline:none;
+}
+*::focus{
+  outline:none;
 }
 
 body {
