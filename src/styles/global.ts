@@ -11,16 +11,14 @@ font-size: ${props => props.theme.font[16].size};
 line-height: ${props => props.theme.font[16].lineHeight};
 text-decoration:none;
 }
-*::focus{
+*:focus, *:active{
   outline:none;
 }
 
 body {
   font-family: ${props => props.theme.fontFamily.roboto};
    background-color: ${props => props.theme.colors['bg-1']};
-   color: ${props => props.theme.colors['text']}; 
- 
-     
+   color: ${props => props.theme.colors['text']};   
 }
 button {
   border:0;
