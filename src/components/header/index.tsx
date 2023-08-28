@@ -2,6 +2,7 @@ import React from 'react';
 import { PiMoonStars, PiScroll, PiSun, PiTimer } from 'react-icons/pi';
 import { NavLink } from 'react-router-dom';
 
+import logoIgnite from '@/assets/ignite.svg';
 import { SwitchThemeContext } from '@/context/switcherTheme';
 
 import * as C from './styles';
@@ -14,7 +15,7 @@ export const Header = () => {
     <C.HeaderContainer>
       <C.SideLeft>
         <span>
-          <img src="/ignite.svg" alt="" />
+          <img src={logoIgnite} alt="" />
         </span>
 
         <C.FlipContainer onClick={switcherTheme}>
