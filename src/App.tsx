@@ -11,12 +11,12 @@ import { light } from '@/styles/themes/light';
 export const App = () => {
   const switchTheme = React.useContext(SwitchThemeContext);
   const { theme } = switchTheme;
-  React.useEffect(() => {
-    document.body.style.transition = 'none';
-    setTimeout(() => {
-      document.body.style.transition = 'background-color 0.7s, color 0.7s';
-    }, 0);
-  }, []);
+  // React.useEffect(() => {
+  //   document.body.style.transition = 'none';
+  //   setTimeout(() => {
+  //     document.body.style.transition = 'background-color 0.7s, color 0.7s';
+  //   }, 0);
+  // }, []);
   const currentTheme = theme === 'dark' ? defaultTheme : light;
   return (
     <ThemeProvider theme={currentTheme}>
