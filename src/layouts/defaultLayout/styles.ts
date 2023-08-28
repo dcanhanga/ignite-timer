@@ -6,7 +6,7 @@ export const LayoutContainer = styled.div`
   height: 100vh;
   background-color: ${props => props.theme.colors['bg-2']};
   margin: ${props => props.theme.rem(80)} auto;
-  padding: ${props => props.theme.rem(40)} ${props => props.theme.rem(10)};
+  padding: ${props => props.theme.rem(40)} ${props => props.theme.rem(16)};
 
   @media screen and (min-width: 768px) {
     padding: ${props => props.theme.rem(40)};
