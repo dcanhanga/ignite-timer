@@ -105,7 +105,7 @@ export const Flag = styled.span`
   font-size: ${props => props.theme.font[14].size};
   line-height: 140%;
   position: absolute;
-  padding: ${props => props.theme.rem(8)} ${props => props.theme.rem(16)};
+  padding: ${props => props.theme.rem(8)} ${props => props.theme.rem(4)};
   position: absolute;
   top: -35px;
 
@@ -115,5 +115,8 @@ export const Flag = styled.span`
     color: black;
     left: 50%;
     transform: translateX(-50%);
+  }
+  @media screen and (min-width: 768px) {
+    padding: ${props => props.theme.rem(8)} ${props => props.theme.rem(16)};
   }
 `;
