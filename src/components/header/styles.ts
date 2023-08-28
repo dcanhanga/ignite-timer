@@ -21,16 +21,30 @@ export const SideLeft = styled.div`
     width: ${props => props.theme.rem(28)};
     height: ${props => props.theme.rem(28)};
   }
-  & .moon {
-    color: white;
-    ${props =>
-      props.theme.title === 'dark' ? `display:block` : `display:none`}
+`;
+
+export const FlipContainer = styled.button`
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: 600ms ease-in-out;
+  ${props => props.theme.title === 'dark' && 'transform: rotateY(180deg)'}
+`;
+const FlipChild = styled.span`
+  position: absolute;
+  backface-visibility: hidden;
+`;
+
+export const Front = styled(FlipChild)`
+  & svg {
+    color: ${props => props.theme.colors['text']};
   }
-  & .sun {
-    color: black;
-    ${props =>
-      props.theme.title === 'light' ? `display:block` : `display:none`}
+`;
+export const Back = styled(FlipChild)`
+  & svg {
+    color: ${props => props.theme.colors['text']};
   }
+  transform: rotateY(180deg);
 `;
 
 export const Ul = styled.ul`

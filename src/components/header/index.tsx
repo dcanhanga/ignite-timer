@@ -17,10 +17,14 @@ export const Header = () => {
           <img src="/ignite.svg" alt="" />
         </span>
 
-        <button onClick={switcherTheme}>
-          <PiSun size={28} className="sun" />
-          <PiMoonStars size={28} className="moon" />
-        </button>
+        <C.FlipContainer onClick={switcherTheme}>
+          <C.Front>
+            <PiSun size={28} className="sun" />
+          </C.Front>
+          <C.Back>
+            <PiMoonStars size={28} className="moon" />
+          </C.Back>
+        </C.FlipContainer>
       </C.SideLeft>
 
       <nav>
