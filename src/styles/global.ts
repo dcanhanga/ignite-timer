@@ -19,6 +19,7 @@ body {
   font-family: ${props => props.theme.fontFamily.roboto};
    background-color: ${props => props.theme.colors['bg-1']};
    color: ${props => props.theme.colors['text']};   
+   -webkit-font-smoothing: antialiased;
 }
 button {
   border:0;

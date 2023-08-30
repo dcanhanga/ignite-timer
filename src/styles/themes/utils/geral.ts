@@ -21,6 +21,14 @@ export const font = {
     size: rem(24),
     lineHeight: '160%',
   },
+  '48': {
+    size: rem(48),
+    lineHeight: '160%',
+  },
+  '60': {
+    size: rem(60),
+    lineHeight: '160%',
+  },
   '160': {
     size: rem(160),
     lineHeight: '160%',
@@ -39,7 +47,6 @@ export const colors = {
   'gray-5': '#8D8D99',
   'gray-6': '#C4C4CC',
   'gray-7': '#E1E1E6',
-
   'green-extra': '#EAF6F2',
   'green-light': '#00B37E',
   green: '#00875F',
