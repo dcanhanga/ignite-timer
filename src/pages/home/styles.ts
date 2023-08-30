@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const HomeContainer = styled.main`
+  margin: ${props => props.theme.rem(80)};
   flex: 1;
-  height: 100%;
   display: flex;
   gap: 60px;
   flex-direction: column;
@@ -28,12 +28,13 @@ export const InputGroups = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media screen and (min-width: 620px) {
+  @media screen and (min-width: 840px) {
     flex-direction: row;
     gap: 8px;
   }
   label {
     font: inherit;
+    text-align: center;
   }
 `;
 
@@ -68,7 +69,7 @@ const BaseInput = styled.input`
 `;
 
 export const Task = styled(BaseInput)`
-  width: 90%;
+  width: 256px;
   &::-webkit-calendar-picker-indicator {
     display: none !important;
   }
@@ -138,8 +139,9 @@ export const Control = styled.button`
   font-weight: 700;
   padding: 16px 40px;
   text-transform: capitalize;
-  width: min(90%, ${props => props.theme.rem(648)});
+  width: min(calc(100vw - 100px), ${props => props.theme.rem(648)});
   &:disabled {
     opacity: 0.7;
+    cursor: not-allowed;
   }
 `;
